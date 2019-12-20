@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/text_white"
+    android:layout_height="match_parent">
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_80sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/profile_rl"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_30sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@color/text_white"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorPrimary"
+                android:id="@+id/profileimage"/>
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                tools:ignore="RtlCompat"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:src="@drawable/profile_edit_icon" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_13sdp"
+                />
+
+            <com.vupadhi.heyhelp.customfonts.CustomEditTextNormal
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint=""
+                android:textColor="@color/text_gray"
+                android:textColorHint="@color/text_gray"
+                android:textSize="@dimen/_14sdp"
+                android:id="@+id/name_et"
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_13sdp" />
+
+            <com.vupadhi.heyhelp.customfonts.CustomEditTextNormal
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint=""
+                android:textColor="@color/text_gray"
+                android:textColorHint="@color/text_gray"
+                android:textSize="@dimen/_14sdp"
+                android:id="@+id/email_et"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_13sdp" />
+
+            <com.vupadhi.heyhelp.customfonts.CustomEditTextNormal
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint=""
+                android:maxLength="10"
+                android:textColor="@color/text_gray"
+                android:textColorHint="@color/text_gray"
+                android:textSize="@dimen/_14sdp"
+                android:id="@+id/mobile_et"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile Type"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_13sdp" />
+
+            <com.vupadhi.heyhelp.customfonts.CustomEditTextNormal
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="Individual"
+                android:maxLength="10"
+                android:textColor="@color/text_gray"
+                android:textColorHint="@color/text_gray"
+                android:textSize="@dimen/_14sdp"
+                android:id="@+id/profiletype_et"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_13sdp" />
+
+            <com.vupadhi.heyhelp.customfonts.CustomEditTextNormal
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="Hyderabad"
+                android:maxLength="10"
+                android:textColor="@color/text_gray"
+                android:textColorHint="@color/text_gray"
+                android:textSize="@dimen/_14sdp"
+                android:id="@+id/location_et"/>
+
+             <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address 1"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_13sdp" />
+
+            <com.vupadhi.heyhelp.customfonts.CustomEditTextNormal
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint=""
+                android:textColor="@color/text_gray"
+                android:textColorHint="@color/text_gray"
+                android:textSize="@dimen/_14sdp"
+                android:singleLine="true"
+                android:maxLength="70"
+                android:id="@+id/address1_et"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address 2"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_13sdp" />
+
+            <com.vupadhi.heyhelp.customfonts.CustomEditTextNormal
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint=""
+                android:textColor="@color/text_gray"
+                android:textColorHint="@color/text_gray"
+                android:textSize="@dimen/_14sdp"
+                android:singleLine="true"
+                android:maxLength="70"
+                android:id="@+id/address2_et"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pincode"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_13sdp" />
+
+            <com.vupadhi.heyhelp.customfonts.CustomEditTextNormal
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint=""
+                android:maxLength="6"
+                android:textColor="@color/text_gray"
+                android:textColorHint="@color/text_gray"
+                android:textSize="@dimen/_14sdp"
+                android:inputType="number"
+                android:singleLine="true"
+                android:id="@+id/pincode_et"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorPrimary" />
+
+        </LinearLayout>
+
+
+        <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+            android:id="@+id/save_changes_lay_out_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Changes"
+            android:textSize="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/text_white"
+            android:paddingVertical="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/onboarding_text_bg" />
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

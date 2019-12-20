@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/text_white"
+    tools:context=".ui.activity.Payment_method_screen">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/pay_method_back_but"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:padding="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:src="@drawable/white_img"
+            android:layout_marginLeft="@dimen/_15sdp"/>
+        <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment Method"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:textColor="@color/text_white"
+            android:layout_gravity="center"
+            android:gravity="start"/>
+    </LinearLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selected_white"
+        android:paddingBottom="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="vertical">
+        <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service Details"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:text="Service Type:"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/text_black"
+                android:layout_marginLeft="@dimen/_15sdp"/>
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                android:layout_width="0dp"
+                android:layout_weight="0.65"
+                android:layout_height="wrap_content"
+                android:text="Domestic Help/Maid"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_11sdp"
+                android:id="@+id/servicetype_tv"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:text="Timings:"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/text_black"
+                android:layout_marginLeft="@dimen/_15sdp"/>
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                android:layout_width="0dp"
+                android:layout_weight="0.65"
+                android:layout_height="wrap_content"
+                android:text="Full Time"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_11sdp"
+                android:id="@+id/timings_tv"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:text="Gender:"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/text_black"
+                android:layout_marginLeft="@dimen/_15sdp"/>
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                android:layout_width="0dp"
+                android:layout_weight="0.65"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_11sdp"
+                android:id="@+id/gender_tv"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:text="Language:"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/text_black"
+                android:layout_marginLeft="@dimen/_15sdp"/>
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                android:layout_width="0dp"
+                android:layout_weight="0.65"
+                android:layout_height="wrap_content"
+                android:text="Telugu"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_11sdp"
+                android:id="@+id/language_tv"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service Include:"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:id="@+id/services_rv"></android.support.v7.widget.RecyclerView>
+
+
+        <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bathroom Cleaning"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/text_black"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:visibility="gone"/>
+        <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Washing Clothes"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/text_black"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:visibility="gone"/>
+        <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kitchen &amp; Utencil Cleaning"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/text_black"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:visibility="gone"/>
+        <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bringing Groceries"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/text_black"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:visibility="gone"/>
+        <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ironing Clothes"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/text_black"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:visibility="gone"/>
+        <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cleaning Floor"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/text_black"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:visibility="gone"/>
+        <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dusting"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/text_black"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:visibility="gone"/>
+
+        </LinearLayout>
+        <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected Profile Details"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/text_black"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_view_one"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:src="@drawable/profile_img"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.95"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:text="Profile A"
+                    android:textSize="@dimen/_13sdp"
+                    android:textColor="@color/text_black"/>
+                    <RatingBar
+                        android:id="@+id/pay_method_rating_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                       android:focusableInTouchMode="true"
+                        android:numStars="5"
+                        android:rating="4"
+                        android:isIndicator="false"
+                        tools:ignore="RtlCompat"
+                        style="@style/Widget.AppCompat.RatingBar.Indicator"
+                        android:theme="@style/RatingBar" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/selected_white"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp">
+
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:text="Premium Package"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_13sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:src="@drawable/right_blue_img"
+                    />
+
+                <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_weight="0.90"
+                    android:text="Verified"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_13sdp"
+                    android:id="@+id/premium_tv"/>
+
+                <RadioButton
+                    android:id="@+id/radio_but_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:checked="true"
+                    android:clickable="true"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:visibility="gone">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/right_blue_img" />
+
+                <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_weight="0.90"
+                    android:text="Skilled"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_13sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_17sdp"
+                    android:layout_weight="0.5"
+                    android:text="Amount :"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                    android:id="@+id/premiumamt_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:hint="₹000"
+                    android:textColorHint="@color/text_gray"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/selected_white"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp">
+
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:text="Ultra Premium Package"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_13sdp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/right_blue_img" />
+
+                <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_weight="0.90"
+                    android:text="Verified"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_13sdp"
+                    android:id="@+id/ultprm_tv"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:visibility="gone">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/right_blue_img" />
+                <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_weight="0.90"
+                    android:text="Skilled"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_13sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:visibility="gone">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/right_blue_img" />
+
+                <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_weight="0.90"
+                    android:text="Police Verified"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_13sdp" />
+
+                <RadioButton
+                    android:id="@+id/radio_but_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:checked="false"
+                    android:clickable="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:visibility="gone">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/right_blue_img" />
+
+                <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_weight="0.90"
+                    android:text="Soft Skilled Trained"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_13sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:visibility="gone">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/right_blue_img" />
+
+                <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_weight="0.90"
+                    android:text="Vcanserve Certified"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_13sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                >
+
+                <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_17sdp"
+                    android:layout_weight="0.5"
+                    android:text="Amount :"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:hint="₹000"
+                    android:textColorHint="@color/text_gray"
+                    android:textSize="@dimen/_14sdp"
+                    android:id="@+id/ultprmamt_tv"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:background="@drawable/selected_blue_line_shape"
+        android:paddingBottom="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:paddingTop="@dimen/_15sdp"
+        android:orientation="horizontal">
+        <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="Amount"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/text_black"/>
+        <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="₹000"
+            android:gravity="end"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:textColorHint="@color/text_black"
+            android:background="@null"
+            android:id="@+id/amount_text"/>
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/pay_method_lay_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:paddingVertical="@dimen/_11sdp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:background="@drawable/onboarding_text_bg"
+            android:orientation="vertical">
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/_16sdp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

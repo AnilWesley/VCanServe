@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_white"
+    tools:context=".ui.activity.OnBoardingActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_480sdp"
+        android:layout_margin="5dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/onboard_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/vDots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:padding="15dp" />
+    </FrameLayout>
+
+    <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+        android:id="@+id/ctvb_getstarted"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:text="Get Started"
+        android:background="@drawable/onboarding_text_bg"
+        android:textSize="@dimen/_16sdp"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_white"/>
+
+</RelativeLayout>

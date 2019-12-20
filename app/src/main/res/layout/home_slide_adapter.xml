@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_160sdp">
+
+
+        <com.github.siyamed.shapeimageview.RoundedImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:siRadius="5dp"
+            android:scaleType="fitXY"
+            android:src="@color/text_white"
+            android:layout_gravity="center" />
+
+        <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+            android:id="@+id/ctvsb_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem Ipsum is simply dummy text used in the Graphic and typesetting industry."
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/_12sdp"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_50sdp" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

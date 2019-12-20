@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/text_white"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_160sdp"
+                android:layout_margin="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <FrameLayout
+                    android:id="@+id/frame_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/home_fragment_viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </android.support.v4.view.ViewPager>
+
+
+                    <LinearLayout
+                        android:id="@+id/vDots"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="15dp" />
+                </FrameLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/services2_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_20sdp"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Our Services"
+                    android:textSize="@dimen/_18sdp"
+                    android:textColor="@color/text_black" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/recycler_our_services"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        app:cardElevation="@dimen/_2sdp"
+                        app:cardCornerRadius="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:id="@+id/help_maid_lay_out"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:background="@drawable/selected_white">
+
+                            <ImageView
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:src="@drawable/domestic_icon" />
+
+                            <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Domestic Help/Maid"
+                                android:textSize="@dimen/_6sdp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_marginTop="@dimen/_7sdp"
+                                android:id="@+id/tv1"/>
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:src="@drawable/home_item_arrow_icon"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/_1sdp"
+                                android:layout_marginTop="@dimen/_8sdp" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        app:cardElevation="@dimen/_2sdp"
+                        app:cardCornerRadius="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:id="@+id/child_care_lay_out"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:background="@drawable/selected_white">
+
+                            <ImageView
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:src="@drawable/child_care_icon" />
+
+                            <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Child Care "
+                                android:textSize="@dimen/_6sdp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_marginTop="@dimen/_7sdp"
+                                android:id="@+id/tv2"/>
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:src="@drawable/home_item_arrow_icon"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/_1sdp"
+                                android:layout_marginTop="@dimen/_8sdp" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        app:cardElevation="@dimen/_2sdp"
+                        app:cardCornerRadius="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:id="@+id/elder_care_lay_out"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/selected_white"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:src="@drawable/elder_care_icon" />
+
+                            <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Elder Care "
+                                android:textSize="@dimen/_6sdp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_marginTop="@dimen/_7sdp"
+                                android:id="@+id/tv3"/>
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:src="@drawable/home_item_arrow_icon"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/_1sdp"
+                                android:layout_marginTop="@dimen/_8sdp" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        app:cardElevation="@dimen/_2sdp"
+                        app:cardCornerRadius="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:id="@+id/cook_lay_out"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/selected_white"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:src="@drawable/cook_icon" />
+
+                            <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Cook"
+                                android:textSize="@dimen/_6sdp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_marginTop="@dimen/_7sdp"
+                                android:id="@+id/tv4"/>
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:src="@drawable/home_item_arrow_icon"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/_1sdp"
+                                android:layout_marginTop="@dimen/_8sdp" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        app:cardElevation="@dimen/_2sdp"
+                        app:cardCornerRadius="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:id="@+id/security_lay_out"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/selected_white"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:src="@drawable/security_icon" />
+
+                            <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Security Guard "
+                                android:textSize="@dimen/_6sdp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_marginTop="@dimen/_7sdp"
+                                android:id="@+id/tv5"/>
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:src="@drawable/home_item_arrow_icon"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/_1sdp"
+                                android:layout_marginTop="@dimen/_8sdp" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/services1_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_20sdp"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:orientation="vertical">
+
+
+                <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Our Services"
+                    android:textSize="@dimen/_18sdp"
+                    android:textColor="@color/text_black" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        app:cardElevation="@dimen/_2sdp"
+                        app:cardCornerRadius="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:id="@+id/servicereq_lay_out"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:background="@drawable/selected_white">
+
+                            <ImageView
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:src="@drawable/rsz_service_request" />
+
+                            <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Service Request"
+                                android:textSize="@dimen/_6sdp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_marginTop="@dimen/_7sdp"
+                                android:id="@+id/servicereq_tv"
+                                />
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:src="@drawable/home_item_arrow_icon"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/_1sdp"
+                                android:layout_marginTop="@dimen/_8sdp" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginHorizontal="@dimen/_15sdp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        app:cardElevation="@dimen/_2sdp"
+                        app:cardCornerRadius="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:id="@+id/payments_lay_out"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/selected_white"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:src="@drawable/rsz_payments" />
+
+                            <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Payments"
+                                android:textSize="@dimen/_6sdp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_marginTop="@dimen/_7sdp"
+                                android:id="@+id/payments_tv"/>
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:src="@drawable/home_item_arrow_icon"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/_1sdp"
+                                android:layout_marginTop="@dimen/_8sdp" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginHorizontal="@dimen/_15sdp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        app:cardElevation="@dimen/_2sdp"
+                        app:cardCornerRadius="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:id="@+id/mark_absent_lay_out"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/selected_white"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:src="@drawable/rsz_calendar" />
+
+                            <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Mark Absent"
+                                android:textSize="@dimen/_6sdp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_marginTop="@dimen/_7sdp"
+                                android:id="@+id/markabs_tv"/>
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:src="@drawable/home_item_arrow_icon"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/_1sdp"
+                                android:layout_marginTop="@dimen/_8sdp" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

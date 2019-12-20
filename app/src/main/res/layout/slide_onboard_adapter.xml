@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/text_white"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+        android:id="@+id/ctvb_head_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We Can serve\nThe Confort you want and\nthe service you need."
+        android:gravity="center"
+        android:textSize="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/text_black" />
+
+
+    <ImageView
+        android:id="@+id/onbarding_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:src="@mipmap/ic_launcher" />
+
+
+    <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+        android:id="@+id/ctvsb_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="we provide over 25+ services\nat your doorstep"
+        android:gravity="center"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:textColor="@color/text_black" />
+
+
+</LinearLayout>

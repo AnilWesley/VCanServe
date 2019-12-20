@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.vupadhi.heyhelp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.Empty_profile_found_screen"></activity>
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.Payment_details_screen" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.Package_selection_screen" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.My_Service_request_screen" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.Raise_tickets_screen" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.Select_absent_date_screen" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.Mark_absent" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.Navigation_payments_screen" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.Payment_method_screen" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.Profile_found_screen" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.Feedback_domestic_help_screen" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.Deployment_notification_screen" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.Placing_order_okay" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.Profile_found_okay_screen" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.Register_okay_screen" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.Payment_okay_screen" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.Raising_okay_screen" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.Notification_screen" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.Cook_screen" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.Security_gaurd_screen"
+
+            android:configChanges="keyboardHidden|screenSize|locale"/>
+        <activity
+            android:name="com.vupadhi.heyhelp.ui.activity.Elder_care"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.DomesticHelpMaidActivity" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.RateandReviewActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.ContactUsActivity" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.AboutUsActivity" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.HomeScreenActivity" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.ResetPasswordActivity" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.ForgotPasswordActivity" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.OtpActivity" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.SignupActivity" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.LoginActivity" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.OnBoardingActivity" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.Help_maid_screen" />
+        <activity
+            android:name="com.vupadhi.heyhelp.ui.activity.Child_care"
+
+            android:configChanges="keyboardHidden|screenSize|locale" />
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.MainActivity" />
+        <activity android:name="com.vupadhi.heyhelp.Activity.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.TermsandCondActivity" />
+    </application>
+
+</manifest>

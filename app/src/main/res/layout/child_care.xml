@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp">
+
+            <ImageView
+                android:id="@+id/child_back_but"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/white_img" />
+
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:gravity="start"
+                android:text="Child Care"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/_15sdp" />
+        </LinearLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:text="Gender"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/boy_lay_out"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/selected_white"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/_30sdp"
+                        android:paddingVertical="@dimen/_15sdp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/boy_img" />
+
+                        <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/text_black"
+                            android:text="Boy"
+                            android:textSize="@dimen/_12sdp"
+                            android:id="@+id/boy_text"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/girl_lay_out"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/selected_white"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/_30sdp"
+                        android:paddingVertical="@dimen/_15sdp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/girl_img" />
+
+                        <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/text_black"
+                            android:text="Girl"
+                            android:textSize="@dimen/_12sdp"
+                            android:id="@+id/girl_text"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:text="Baby Age"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/_14sdp" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/relativelayoutt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:background="@drawable/selected_white"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/_13sdp"
+                        android:paddingBottom="@dimen/_13sdp"
+                        >
+
+                        <Spinner
+                            android:id="@+id/spinner_age"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:background="@null"
+                            android:hint="Select"
+                            style="@style/mySpinnerItemStyle"
+                            android:textColor="@color/text_white"
+                            android:textColorHint="@color/text_white"
+                            android:textSize="@dimen/_12sdp"
+                            android:visibility="invisible" />
+
+                        <com.vupadhi.heyhelp.customfonts.CustomTextViewNormal
+                            android:id="@+id/tv_spinnertext"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:hint="Select"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:textColor="@color/text_black"
+                            android:textColorHint="@color/text_black"
+                            android:textSize="18sp"/>
+
+                        <ImageView
+                            android:id="@+id/dropimg"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:src="@drawable/downarrow" />
+
+
+                    </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/babylist_rv"
+                    android:layout_marginTop="@dimen/_10sdp"></android.support.v7.widget.RecyclerView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:visibility="gone">
+
+                    <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_weight="0.95"
+                        android:text="Baby Bathing"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <com.suke.widget.SwitchButton
+                        android:id="@+id/switch_button_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        app:sb_checked="true"
+                        app:sb_checked_color="@color/colorAccent"
+                        app:sb_uncheck_color="@color/colorAccent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:visibility="gone">
+
+                    <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_weight="0.95"
+                        android:text="Baby Massage"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <com.suke.widget.SwitchButton
+                        android:id="@+id/switch_button_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        app:sb_checked="true"
+                        app:sb_checked_color="@color/colorAccent"
+                        app:sb_uncheck_color="@color/colorAccent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:visibility="gone">
+
+                    <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_weight="0.95"
+                        android:text="Baby Sleep"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <com.suke.widget.SwitchButton
+                        android:id="@+id/switch_button_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        app:sb_checked="true"
+                        app:sb_checked_color="@color/colorAccent"
+                        app:sb_uncheck_color="@color/colorAccent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:visibility="gone">
+
+                    <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_weight="0.95"
+                        android:text="Change Diaper"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <com.suke.widget.SwitchButton
+                        android:id="@+id/switch_button_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        app:sb_checked="true"
+                        app:sb_checked_color="@color/colorAccent"
+                        app:sb_uncheck_color="@color/colorAccent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:visibility="gone">
+
+                    <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_weight="0.95"
+                        android:text="Baby Walk"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <com.suke.widget.SwitchButton
+                        android:id="@+id/switch_button_five"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        app:sb_checked="true"
+                        app:sb_checked_color="@color/colorAccent"
+                        app:sb_uncheck_color="@color/colorAccent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:visibility="gone">
+
+                    <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_weight="0.95"
+                        android:text="Baby Feeding"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <com.suke.widget.SwitchButton
+                        android:id="@+id/switch_button_six"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        app:sb_checked="true"
+                        app:sb_checked_color="@color/colorAccent"
+                        app:sb_uncheck_color="@color/colorAccent" />
+                </LinearLayout>
+
+                <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:text="Other Child Care Services"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/_13sdp"
+                    android:visibility="gone"
+                    android:id="@+id/others_text"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/selected_white">
+                    <com.vupadhi.heyhelp.customfonts.CustomEditTextBold
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:maxLines="3"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@null"
+                        android:id="@+id/others_et"
+                        android:hint="Write something here"
+                        android:maxLength="30"
+                        android:singleLine="true"
+                        android:gravity="start"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/child_care_submit_lay_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_25sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/onboarding_text_bg"
+                    android:orientation="vertical"
+                    android:paddingVertical="@dimen/_11sdp">
+
+                    <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Submit"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/_16sdp" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

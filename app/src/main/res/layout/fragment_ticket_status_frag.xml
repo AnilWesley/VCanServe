@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_white"
+    tools:context=".ui.Fragments.Ticket_status_frag">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ticket_status_recycle_view"></android.support.v7.widget.RecyclerView>
+
+        <com.vupadhi.heyhelp.customfonts.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nodata_tv"
+            android:textSize="@dimen/_12sdp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/ticket_status_submit_lay_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:background="@drawable/onboarding_text_bg"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/_11sdp"
+            android:visibility="gone"
+            >
+
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Submit"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/_16sdp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

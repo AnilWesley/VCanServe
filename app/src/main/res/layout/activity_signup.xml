@@ -1,0 +1,624 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_80sdp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/back_arrow"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:padding="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:src="@drawable/back_arrow" />
+
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SignUp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/text_white"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_25sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                    android:id="@+id/ctvsb_individual"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Individual"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/_18sdp" />
+
+                <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                    android:id="@+id/ctvsb_company"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Company"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#8ad5d1"
+                    android:textSize="@dimen/_18sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp">
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:id="@+id/linear_individual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/signup_text_bg">
+
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:src="@drawable/user_icon"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:padding="@dimen/_8sdp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/text_white"
+                            android:layout_marginVertical="@dimen/_8sdp" />
+
+                        <com.vupadhi.heyhelp.customfonts.CustomEditTextBold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Name"
+                            android:background="@null"
+                            android:textSize="@dimen/_16sdp"
+                            android:textColor="@color/text_white"
+                            android:textColorHint="@color/text_white"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:id="@+id/name_et"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                            android:singleLine="true"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_18sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/signup_text_bg">
+
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:src="@drawable/email_icon"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:padding="@dimen/_8sdp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/text_white"
+                            android:layout_marginVertical="@dimen/_8sdp" />
+
+                        <com.vupadhi.heyhelp.customfonts.CustomEditTextBold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email"
+                            android:background="@null"
+                            android:textSize="@dimen/_16sdp"
+                            android:textColor="@color/text_white"
+                            android:textColorHint="@color/text_white"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:id="@+id/email_et"
+                            android:singleLine="true"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_18sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/signup_text_bg">
+
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:src="@drawable/phone_icon"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:padding="@dimen/_7sdp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/text_white"
+                            android:layout_marginVertical="@dimen/_8sdp" />
+
+                        <com.vupadhi.heyhelp.customfonts.CustomEditTextBold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Phone number"
+                            android:background="@null"
+                            android:textSize="@dimen/_16sdp"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:textColor="@color/text_white"
+                            android:textColorHint="@color/text_white"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:id="@+id/number_et"
+                            android:singleLine="true"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_18sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/signup_text_bg">
+
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:src="@drawable/password_icon"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:padding="@dimen/_7sdp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/text_white"
+                            android:layout_marginVertical="@dimen/_8sdp" />
+
+                        <com.vupadhi.heyhelp.customfonts.CustomEditTextBold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Password"
+                            android:background="@null"
+                            android:textSize="@dimen/_16sdp"
+                            android:textColor="@color/text_white"
+                            android:textColorHint="@color/text_white"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:id="@+id/password_et"
+                            android:singleLine="true"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_18sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/signup_text_bg">
+
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:src="@drawable/map_icon"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:padding="@dimen/_7sdp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/text_white"
+                            android:layout_marginVertical="@dimen/_8sdp" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/relativelayoutt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            >
+
+                            <Spinner
+                                android:id="@+id/spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="@dimen/_5sdp"
+                                android:background="@null"
+                                android:hint="Select location"
+                                style="@style/mySpinnerItemStyle"
+                                android:textColor="@color/text_white"
+                                android:textColorHint="@color/text_white"
+                                android:textSize="@dimen/_12sdp"
+                                android:visibility="invisible" />
+
+                            <com.vupadhi.heyhelp.customfonts.CustomTextViewNormal
+                                android:id="@+id/tv_spinnertext"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="@dimen/_5sdp"
+                                android:background="@null"
+                                android:focusable="false"
+                                android:hint="Select location"
+                                android:paddingLeft="@dimen/_5sdp"
+                                android:textColor="@color/text_white"
+                                android:textColorHint="@color/text_white"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:id="@+id/dropimg"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/ic_drop_down_arrow" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/linear_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/signup_text_bg">
+
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:src="@drawable/company_icon"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:padding="@dimen/_8sdp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/text_white"
+                            android:layout_marginVertical="@dimen/_8sdp" />
+
+                        <com.vupadhi.heyhelp.customfonts.CustomEditTextBold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Company Name"
+                            android:background="@null"
+                            android:textSize="@dimen/_16sdp"
+                            android:textColor="@color/text_white"
+                            android:textColorHint="@color/text_white"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                            android:id="@+id/companyname_et"
+                            android:singleLine="true"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_18sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/signup_text_bg">
+
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:src="@drawable/user_icon"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:padding="@dimen/_8sdp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/text_white"
+                            android:layout_marginVertical="@dimen/_8sdp" />
+
+                        <com.vupadhi.heyhelp.customfonts.CustomEditTextBold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Contact Person"
+                            android:background="@null"
+                            android:textSize="@dimen/_16sdp"
+                            android:textColor="@color/text_white"
+                            android:textColorHint="@color/text_white"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:id="@+id/cname_et"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                            android:singleLine="true"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_18sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/signup_text_bg">
+
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:src="@drawable/email_icon"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:padding="@dimen/_8sdp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/text_white"
+                            android:layout_marginVertical="@dimen/_8sdp" />
+
+                        <com.vupadhi.heyhelp.customfonts.CustomEditTextBold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email"
+                            android:background="@null"
+                            android:textSize="@dimen/_16sdp"
+                            android:textColor="@color/text_white"
+                            android:textColorHint="@color/text_white"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:id="@+id/cemail_et"
+                            android:singleLine="true"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_18sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/signup_text_bg">
+
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:src="@drawable/phone_icon"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:padding="@dimen/_7sdp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/text_white"
+                            android:layout_marginVertical="@dimen/_8sdp" />
+
+                        <com.vupadhi.heyhelp.customfonts.CustomEditTextBold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Phone number"
+                            android:background="@null"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:textSize="@dimen/_16sdp"
+                            android:textColor="@color/text_white"
+                            android:textColorHint="@color/text_white"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:id="@+id/cnumber_et"
+                            android:singleLine="true"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_18sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/signup_text_bg">
+
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:src="@drawable/password_icon"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:padding="@dimen/_7sdp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/text_white"
+                            android:layout_marginVertical="@dimen/_8sdp" />
+
+                        <com.vupadhi.heyhelp.customfonts.CustomEditTextBold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Password"
+                            android:background="@null"
+                            android:textSize="@dimen/_16sdp"
+                            android:textColor="@color/text_white"
+                            android:textColorHint="@color/text_white"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:id="@+id/cpassword_et"
+                            android:singleLine="true"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_18sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/signup_text_bg">
+
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:src="@drawable/map_icon"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:padding="@dimen/_7sdp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/text_white"
+                            android:layout_marginVertical="@dimen/_8sdp" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/relativelayoutt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            >
+
+                            <Spinner
+                                android:id="@+id/cspinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="@dimen/_5sdp"
+                                android:background="@null"
+                                android:hint="Select location"
+                                style="@style/mySpinnerItemStyle"
+                                android:textColor="@color/text_white"
+                                android:textColorHint="@color/text_white"
+                                android:textSize="@dimen/_12sdp"
+                                android:visibility="invisible" />
+
+                            <com.vupadhi.heyhelp.customfonts.CustomTextViewNormal
+                                android:id="@+id/tv_spinnertext1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="@dimen/_5sdp"
+                                android:background="@null"
+                                android:focusable="false"
+                                android:hint="Select location"
+                                android:paddingLeft="@dimen/_5sdp"
+                                android:textColor="@color/text_white"
+                                android:textColorHint="@color/text_white"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:id="@+id/dropimg1"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/ic_drop_down_arrow" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                    android:id="@+id/ctvb_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SignUp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="@dimen/_50sdp"
+                    android:paddingVertical="@dimen/_6sdp"
+                    android:background="@drawable/signup_text_white_bg"
+                    android:textSize="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:textColor="@color/text_black" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/text_white">
+
+        <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:textSize="@dimen/_15sdp"
+            android:paddingVertical="@dimen/_14sdp"
+            android:textColor="@color/text_black" />
+
+        <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+            android:id="@+id/ctvsb_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+</RelativeLayout>
+

@@ -1,0 +1,188 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:padding="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/back_arrow" />
+
+
+        <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the 4-digit code sent to"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColor="@color/text_white" />
+
+        <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+91 9876543210"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/text_white"
+            android:id="@+id/mobile_text"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:gravity="center">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+            <com.vupadhi.heyhelp.customfonts.CustomEditTextBold
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@null"
+                android:backgroundTint="@color/text_white"
+                android:maxLength="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:id="@+id/et1"/>
+    <View
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_gravity="center"
+        android:background="@color/text_white"></View>
+</LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.vupadhi.heyhelp.customfonts.CustomEditTextBold
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@null"
+                    android:backgroundTint="@color/text_white"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:id="@+id/et2"/>
+                <View
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_2sdp"
+                    android:layout_gravity="center"
+                    android:background="@color/text_white"></View>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.vupadhi.heyhelp.customfonts.CustomEditTextBold
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@null"
+                    android:backgroundTint="@color/text_white"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:id="@+id/et3"/>
+                <View
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_2sdp"
+                    android:layout_gravity="center"
+                    android:background="@color/text_white"></View>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.vupadhi.heyhelp.customfonts.CustomEditTextBold
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@null"
+                    android:backgroundTint="@color/text_white"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:id="@+id/et4"/>
+                <View
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_2sdp"
+                    android:layout_gravity="center"
+                    android:background="@color/text_white"></View>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+            android:id="@+id/ctvb_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/_55sdp"
+            android:paddingVertical="@dimen/_8sdp"
+            android:background="@drawable/signup_text_white_bg"
+            android:textSize="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textColor="@color/text_black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_100sdp"
+        android:orientation="vertical">
+
+        <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Didn't Recevie it ?"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColor="@color/text_white" />
+
+        <LinearLayout
+            android:id="@+id/resend_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Request a new code"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:textColor="@color/text_white" />
+
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00 : 28"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:textColor="@color/text_white"
+                android:id="@+id/timetext"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

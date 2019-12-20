@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:background="@drawable/selected_white"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_20sdp"
+        android:paddingTop="@dimen/_20sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Domestic Help/maid Service"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/text_black"
+                android:id="@+id/service_text"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount:"
+                    android:textSize="@dimen/_13sdp"
+                    android:textColor="@color/text_black"/>
+                <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5000"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/text_black"
+                    android:id="@+id/amount_text"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/paid_now_but"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/green_back_ground_shape"
+            android:orientation="vertical">
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="#399d97"
+                android:id="@+id/pay_text"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

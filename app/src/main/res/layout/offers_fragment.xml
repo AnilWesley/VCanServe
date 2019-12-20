@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_white">
+
+    <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Available coupons"
+        android:layout_margin="@dimen/_10sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/text_black"
+        android:id="@+id/header"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:layout_below="@id/header">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/offer_recycler"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <com.vupadhi.heyhelp.customfonts.CustomTextViewNormal
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No offers available"
+        android:textSize="@dimen/_12sdp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/nodata_tv"/>
+
+</RelativeLayout>

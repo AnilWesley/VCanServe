@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/text_white"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.Select_absent_date_screen">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/select_absent_back_but"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:padding="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:src="@drawable/white_img"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_15sdp"/>
+        <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Absent Date"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:textColor="@color/text_white"
+            android:layout_gravity="center"
+            android:gravity="start"/>
+    </LinearLayout>
+
+
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+    </CalendarView>
+
+    <com.applandeo.materialcalendarview.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:abbreviationsBarColor="#303F9F"
+        app:abbreviationsLabelsColor="@android:color/white"
+        app:daysLabelsColor="@android:color/white"
+        app:headerColor="#1A237E"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:pagesColor="#3F51B5"
+
+        app:selectionColor="@android:color/white"
+        app:selectionLabelColor="#3F51B5"
+        app:anotherMonthsDaysLabelsColor="#3F51B5"
+        app:todayLabelColor="#AEEA00"
+
+        app:type="many_days_picker" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ru.slybeaver.slycalendarview.SlyCalendarView
+            android:id="@+id/slyCalendarView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:backgroundColor="#000000"
+            app:headerColor="#ff0000"
+            app:firstMonday="true"
+            app:textColor="#00ff00"
+            app:selectedColor="#0000ff"
+            />
+    <LinearLayout
+        android:id="@+id/make_absent_lay_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:paddingVertical="@dimen/_11sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:background="@drawable/onboarding_text_bg"
+        android:orientation="vertical">
+        <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make absent"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/_16sdp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

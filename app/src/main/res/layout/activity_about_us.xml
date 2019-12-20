@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/text_white"
+    tools:context=".ui.activity.AboutUsActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_v"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/_2sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back_arrow"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:padding="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:src="@drawable/back_arrow" />
+
+            <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/_16sdp" />
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/text_black"
+        android:id="@+id/aboutus_tv"
+        android:text="Lorem Ipsum is simply dummy text used in the Graphic and typesetting industry." />
+
+    <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Policy"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_18sdp"
+        android:textColor="@color/text_black" />
+
+    <com.borjabravo.readmoretextview.ReadMoreTextView
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:trimExpandedText="Read more"
+        app:trimCollapsedText="Read less"
+        app:trimMode="trimModeLength"
+        app:trimLength="80"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/text_black"
+        android:id="@+id/policy_tv"
+        android:text="Lorem Ipsum is simply dummy text used in the Graphic and typesetting industry.Lorem Ipsum is simply dummy text used in the Graphic and typesetting industry." />
+
+    <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pricing"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_18sdp"
+        android:textColor="@color/text_black"/>
+
+    <com.borjabravo.readmoretextview.ReadMoreTextView
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:trimExpandedText="Read more"
+        app:trimCollapsedText="Read less"
+        app:trimMode="trimModeLength"
+        app:trimLength="80"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/text_black"
+        android:id="@+id/pricing_tv"
+        android:text="Lorem Ipsum is simply dummy text used in the Graphic and typesetting industry.Lorem Ipsum is simply dummy text used in the Graphic and typesetting industry." />
+
+    <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terms &amp; Conditions"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_18sdp"
+        android:textColor="@color/text_black" />
+
+    <com.borjabravo.readmoretextview.ReadMoreTextView
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:trimExpandedText="Read more"
+        app:trimCollapsedText="Read less"
+        app:trimMode="trimModeLength"
+        app:trimLength="80"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/text_black"
+        android:id="@+id/termscon_tv"
+        android:text="Lorem Ipsum is simply dummy text used in the Graphic and typesetting industry.Lorem Ipsum is simply dummy text used in the Graphic and typesetting industry." />
+
+    <com.vupadhi.heyhelp.customfonts.CustomTextViewBold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FAQ's"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_18sdp"
+        android:textColor="@color/text_black" />
+
+    <com.borjabravo.readmoretextview.ReadMoreTextView
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:trimExpandedText="Read more"
+        app:trimCollapsedText="Read less"
+        app:trimMode="trimModeLength"
+        app:trimLength="80"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/text_black"
+        android:id="@+id/faqs_tv"
+        android:text="Lorem Ipsum is simply dummy text used in the Graphic and typesetting industry.Lorem Ipsum is simply dummy text used in the Graphic and typesetting industry." />
+
+
+</LinearLayout>

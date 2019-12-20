@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linear_ll"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selected_white"
+        android:paddingVertical="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:orientation="vertical">
+        <com.vupadhi.heyhelp.customfonts.CustomTextViewNormal
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sdp"
+            android:layout_gravity="center"
+            android:textColor="@color/text_black"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:text="Ans1"
+            android:id="@+id/answer_tv"/>
+
+         <com.vupadhi.heyhelp.customfonts.CustomTextViewNormal
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sdp"
+            android:layout_gravity="center"
+            android:textColor="@color/text_black"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:text="Ans"
+             android:visibility="gone"
+            android:id="@+id/groupostn_tv"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
