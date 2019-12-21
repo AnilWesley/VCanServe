@@ -22,8 +22,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        >
-        <activity android:name="com.vupadhi.heyhelp.ui.activity.Empty_profile_found_screen"></activity>
+        android:fullBackupContent="true"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:targetApi="m">
+        <activity android:name="com.vupadhi.heyhelp.ui.activity.Empty_profile_found_screen"/>
         <activity android:name="com.vupadhi.heyhelp.ui.activity.Payment_details_screen" />
 
         <uses-library
@@ -72,7 +75,7 @@
 
             android:configChanges="keyboardHidden|screenSize|locale" />
         <activity android:name="com.vupadhi.heyhelp.ui.activity.MainActivity" />
-        <activity android:name="com.vupadhi.heyhelp.Activity.SplashScreenActivity">
+        <activity android:name="com.vupadhi.heyhelp.activity.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

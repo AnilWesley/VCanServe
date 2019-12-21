@@ -18,7 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
-import com.vupadhi.heyhelp.Adapter.RaiseTicketsRecyclerAdapter;
+import com.vupadhi.heyhelp.adapter.RaiseTicketsRecyclerAdapter;
 import com.vupadhi.heyhelp.R;
 import com.vupadhi.heyhelp.app.constants.AppConstants;
 import com.vupadhi.heyhelp.app.controller.ApplicationController;

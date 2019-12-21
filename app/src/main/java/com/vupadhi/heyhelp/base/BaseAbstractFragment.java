@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.vupadhi.heyhelp.Activity.SplashScreenActivity;
+import com.vupadhi.heyhelp.activity.SplashScreenActivity;
 
 
 //import com.iprismech.centralvarcity.activities.SplashScreenActivity;

@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 
 import com.google.gson.Gson;
-import com.vupadhi.heyhelp.Adapter.OffersRecyclerAdapter;
+import com.vupadhi.heyhelp.adapter.OffersRecyclerAdapter;
 import com.vupadhi.heyhelp.R;
 import com.vupadhi.heyhelp.base.BaseAbstractFragment;
 import com.vupadhi.heyhelp.models.OffersModel;

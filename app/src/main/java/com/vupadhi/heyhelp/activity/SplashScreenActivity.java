@@ -1,4 +1,4 @@
-package com.vupadhi.heyhelp.Activity;
+package com.vupadhi.heyhelp.activity;
 
 
 

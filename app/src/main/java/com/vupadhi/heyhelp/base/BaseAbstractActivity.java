@@ -16,7 +16,7 @@ import android.widget.FrameLayout;
 
 
 import com.vupadhi.heyhelp.R;
-import com.vupadhi.heyhelp.Activity.SplashScreenActivity;
+import com.vupadhi.heyhelp.activity.SplashScreenActivity;
 
 import java.util.Locale;
 

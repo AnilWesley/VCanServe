@@ -32,7 +32,7 @@ import android.widget.Toast;
 
 
 import com.google.gson.Gson;
-import com.vupadhi.heyhelp.Adapter.HomeSlideAdapter;
+import com.vupadhi.heyhelp.adapter.HomeSlideAdapter;
 import com.vupadhi.heyhelp.app.constants.AppConstants;
 import com.vupadhi.heyhelp.app.controller.ApplicationController;
 import com.vupadhi.heyhelp.base.BaseAbstractFragment;

@@ -16,7 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.vupadhi.heyhelp.Adapter.ElderCareRecyclerAdapter;
+import com.vupadhi.heyhelp.adapter.ElderCareRecyclerAdapter;
 import com.vupadhi.heyhelp.R;
 import com.vupadhi.heyhelp.base.BaseAbstractActivity;
 import com.vupadhi.heyhelp.models.ElderCareModel;

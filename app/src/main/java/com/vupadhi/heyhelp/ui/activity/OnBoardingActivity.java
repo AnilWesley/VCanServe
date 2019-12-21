@@ -14,7 +14,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.vupadhi.heyhelp.Adapter.slideAdapter;
+import com.vupadhi.heyhelp.adapter.slideAdapter;
 import com.vupadhi.heyhelp.R;
 import com.vupadhi.heyhelp.base.BaseAbstractActivity;
 import com.vupadhi.heyhelp.customfonts.CustomTextViewBold;
@@ -28,7 +28,7 @@ import java.util.TimerTask;
 public class OnBoardingActivity extends BaseAbstractActivity<OnBoardingActivityImpl> implements OnBoardingActivityContract.IView, APIResponseCallback {
     ViewPager viewPager;
     private LinearLayout vllDost;
-    private com.vupadhi.heyhelp.Adapter.slideAdapter slideAdapter;
+    private com.vupadhi.heyhelp.adapter.slideAdapter slideAdapter;
     private TextView[] mdots;
     private CustomTextViewBold ctvb_getstarted;
 

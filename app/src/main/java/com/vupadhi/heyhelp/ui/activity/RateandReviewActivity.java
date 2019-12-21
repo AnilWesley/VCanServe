@@ -17,7 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
-import com.vupadhi.heyhelp.Adapter.RateandReviewRecyclerAdapter;
+import com.vupadhi.heyhelp.adapter.RateandReviewRecyclerAdapter;
 import com.vupadhi.heyhelp.R;
 import com.vupadhi.heyhelp.app.constants.AppConstants;
 import com.vupadhi.heyhelp.app.controller.ApplicationController;

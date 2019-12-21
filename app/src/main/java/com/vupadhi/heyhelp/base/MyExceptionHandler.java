@@ -4,7 +4,7 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 
-import com.vupadhi.heyhelp.Activity.SplashScreenActivity;
+import com.vupadhi.heyhelp.activity.SplashScreenActivity;
 
 //import com.iprismtech.wewriteforyou.activities.SplashScreenActivity;
 

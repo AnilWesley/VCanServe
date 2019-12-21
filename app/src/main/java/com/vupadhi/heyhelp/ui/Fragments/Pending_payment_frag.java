@@ -15,7 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
-import com.vupadhi.heyhelp.Adapter.PendingPaymentsRecyclerAdapter;
+import com.vupadhi.heyhelp.adapter.PendingPaymentsRecyclerAdapter;
 import com.vupadhi.heyhelp.R;
 import com.vupadhi.heyhelp.base.BaseAbstractFragment;
 import com.vupadhi.heyhelp.models.PendingPayModel;

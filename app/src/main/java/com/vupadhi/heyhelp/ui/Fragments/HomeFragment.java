@@ -17,7 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-import com.vupadhi.heyhelp.Adapter.HomeSlideAdapter;
+import com.vupadhi.heyhelp.adapter.HomeSlideAdapter;
 import com.vupadhi.heyhelp.base.BaseAbstractFragment;
 import com.vupadhi.heyhelp.mvp.contract.fragment.HomefragmentContract;
 import com.vupadhi.heyhelp.mvp.presenter.fragment.HomefragmentImpl;

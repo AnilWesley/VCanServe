@@ -15,7 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.vupadhi.heyhelp.Adapter.HelpMaidRecyclerAdapter;
+import com.vupadhi.heyhelp.adapter.HelpMaidRecyclerAdapter;
 import com.vupadhi.heyhelp.R;
 import com.vupadhi.heyhelp.base.BaseAbstractActivity;
 import com.vupadhi.heyhelp.models.HelpMaidScreenModel;

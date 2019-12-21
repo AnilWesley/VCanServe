@@ -15,7 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
-import com.vupadhi.heyhelp.Adapter.ServiceRequestsRecyclerAdapter;
+import com.vupadhi.heyhelp.adapter.ServiceRequestsRecyclerAdapter;
 import com.vupadhi.heyhelp.R;
 import com.vupadhi.heyhelp.base.BaseAbstractActivity;
 import com.vupadhi.heyhelp.customfonts.CustomTextViewBold;

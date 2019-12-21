@@ -13,7 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
-import com.vupadhi.heyhelp.Adapter.FeedbackRecyclerAdapter;
+import com.vupadhi.heyhelp.adapter.FeedbackRecyclerAdapter;
 import com.vupadhi.heyhelp.R;
 import com.vupadhi.heyhelp.app.constants.AppConstants;
 import com.vupadhi.heyhelp.app.controller.ApplicationController;

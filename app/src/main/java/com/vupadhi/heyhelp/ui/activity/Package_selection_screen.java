@@ -17,8 +17,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
-import com.vupadhi.heyhelp.Adapter.PremiumPkgRecyclerAdapter;
-import com.vupadhi.heyhelp.Adapter.UltraPremiumPkgRecyclerAdapter;
+import com.vupadhi.heyhelp.adapter.PremiumPkgRecyclerAdapter;
+import com.vupadhi.heyhelp.adapter.UltraPremiumPkgRecyclerAdapter;
 import com.vupadhi.heyhelp.R;
 import com.vupadhi.heyhelp.app.constants.AppConstants;
 import com.vupadhi.heyhelp.app.controller.ApplicationController;

@@ -1,4 +1,4 @@
-package com.vupadhi.heyhelp.Adapter;
+package com.vupadhi.heyhelp.adapter;
 
 import android.content.Context;
 import androidx.recyclerview.widget.RecyclerView;

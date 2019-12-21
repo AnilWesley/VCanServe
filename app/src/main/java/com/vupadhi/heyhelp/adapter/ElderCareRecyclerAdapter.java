@@ -1,4 +1,4 @@
-package com.vupadhi.heyhelp.Adapter;
+package com.vupadhi.heyhelp.adapter;
 
 import android.content.Context;
 import androidx.recyclerview.widget.RecyclerView;
@@ -10,41 +10,41 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.vupadhi.heyhelp.R;
-import com.vupadhi.heyhelp.models.SecurityGuardScreenModel;
+import com.vupadhi.heyhelp.models.ElderCareModel;
 import com.vupadhi.heyhelp.sharepref.UserSession;
-import com.vupadhi.heyhelp.ui.activity.Security_gaurd_screen;
+import com.vupadhi.heyhelp.ui.activity.Elder_care;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class SecurityGuardRecyclerAdapter extends RecyclerView.Adapter<SecurityGuardRecyclerAdapter.ElderCareAdapterView> {
+public class ElderCareRecyclerAdapter extends RecyclerView.Adapter<ElderCareRecyclerAdapter.ElderCareAdapterView> {
 
 
     LayoutInflater inflater;
     Context context;
 
-    SecurityGuardScreenModel securityGuardScreenModel;
+    ElderCareModel elderCareModel;
 
-    List<SecurityGuardScreenModel.DataBean.SubservicelistBean> servicelist;
+    List<ElderCareModel.DataBean.SubservicelistBean> servicelist;
 
 
     private UserSession userSession;
     private ArrayList<String> myList;
 
 
-    public SecurityGuardRecyclerAdapter(List<SecurityGuardScreenModel.DataBean.SubservicelistBean> securityGuardScreenModel, Security_gaurd_screen context) {
+    public ElderCareRecyclerAdapter(List<ElderCareModel.DataBean.SubservicelistBean> elderCareModel, Elder_care context) {
         this.context = context;
-        this.servicelist = securityGuardScreenModel;
+        this.servicelist = elderCareModel;
 
         inflater = LayoutInflater.from(context);
         userSession = new UserSession(context);
     }
 
 
-    private SecurityGuardRecyclerAdapter.OnitemClickListener mListner;
+    private ElderCareRecyclerAdapter.OnitemClickListener mListner;
 
-    public void setOnItemClickListener(SecurityGuardRecyclerAdapter.OnitemClickListener onitemClickListener) {
+    public void setOnItemClickListener(ElderCareRecyclerAdapter.OnitemClickListener onitemClickListener) {
         mListner = onitemClickListener;
     }
 
@@ -53,16 +53,16 @@ public class SecurityGuardRecyclerAdapter extends RecyclerView.Adapter<SecurityG
     }
 
     @Override
-    public SecurityGuardRecyclerAdapter.ElderCareAdapterView onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView = inflater.inflate(R.layout.securityguard_adapter, parent, false);
-        return new SecurityGuardRecyclerAdapter.ElderCareAdapterView(itemView);
+    public ElderCareRecyclerAdapter.ElderCareAdapterView onCreateViewHolder(ViewGroup parent, int viewType) {
+        View itemView = inflater.inflate(R.layout.eldercarelist_adapter, parent, false);
+        return new ElderCareRecyclerAdapter.ElderCareAdapterView(itemView);
     }
 
     @Override
-    public void onBindViewHolder(final SecurityGuardRecyclerAdapter.ElderCareAdapterView holder, final int position) {
+    public void onBindViewHolder(final ElderCareRecyclerAdapter.ElderCareAdapterView holder, final int position) {
 
 
-        if (position > 1) {
+        if (position > 2) {
 
             holder.linearlayout.setVisibility(View.VISIBLE);
 
@@ -71,11 +71,10 @@ public class SecurityGuardRecyclerAdapter extends RecyclerView.Adapter<SecurityG
 
             if (servicelist.get(position).isClicked()) {
 
-                holder.switch_button_one.setImageResource(R.drawable.switchskyblue);
-
+                 holder.switch_button_one.setImageResource(R.drawable.switchskyblue);
 
             } else {
-                holder.switch_button_one.setImageResource(R.drawable.switchreverse);
+              holder.switch_button_one.setImageResource(R.drawable.switchreverse);
 
             }
 
@@ -102,7 +101,6 @@ public class SecurityGuardRecyclerAdapter extends RecyclerView.Adapter<SecurityG
             });
         } else {
             holder.linearlayout.setVisibility(View.GONE);
-
         }
 
       /*  holder.switch_button_one.setOnClickListener(new View.OnClickListener() {
@@ -134,8 +132,8 @@ public class SecurityGuardRecyclerAdapter extends RecyclerView.Adapter<SecurityG
         return servicelist.size();
     }
 
-    public ArrayList<SecurityGuardScreenModel.DataBean.SubservicelistBean> getselectedList() {
-        ArrayList<SecurityGuardScreenModel.DataBean.SubservicelistBean> newSelctedList = new ArrayList<>();
+    public ArrayList<ElderCareModel.DataBean.SubservicelistBean> getselectedList() {
+        ArrayList<ElderCareModel.DataBean.SubservicelistBean> newSelctedList = new ArrayList<>();
         for (int y = 0; y < servicelist.size(); y++) {
             if (servicelist.get(y).isClicked()) {
                 newSelctedList.add(servicelist.get(y));

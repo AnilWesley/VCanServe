@@ -16,7 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
-import com.vupadhi.heyhelp.Adapter.Profile_found_adapter;
+import com.vupadhi.heyhelp.adapter.Profile_found_adapter;
 import com.vupadhi.heyhelp.R;
 import com.vupadhi.heyhelp.app.constants.AppConstants;
 import com.vupadhi.heyhelp.app.controller.ApplicationController;

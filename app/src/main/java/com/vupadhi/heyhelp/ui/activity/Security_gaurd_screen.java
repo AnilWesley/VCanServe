@@ -16,7 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.vupadhi.heyhelp.Adapter.SecurityGuardRecyclerAdapter;
+import com.vupadhi.heyhelp.adapter.SecurityGuardRecyclerAdapter;
 import com.vupadhi.heyhelp.R;
 import com.vupadhi.heyhelp.base.BaseAbstractActivity;
 import com.vupadhi.heyhelp.models.SecurityGuardScreenModel;
