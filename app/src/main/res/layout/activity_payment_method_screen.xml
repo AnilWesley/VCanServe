@@ -33,7 +33,7 @@
             android:layout_gravity="center"
             android:gravity="start"/>
     </LinearLayout>
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     <LinearLayout
@@ -163,11 +163,11 @@
             android:layout_marginLeft="@dimen/_15sdp"
             android:layout_marginTop="@dimen/_15sdp"/>
 
-            <android.support.v7.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:nestedScrollingEnabled="false"
-                android:id="@+id/services_rv"></android.support.v7.widget.RecyclerView>
+                android:id="@+id/services_rv"></androidx.recyclerview.widget.RecyclerView>
 
 
         <com.vupadhi.heyhelp.customfonts.CustomTextViewSemiBold
@@ -657,5 +657,5 @@
                 android:layout_gravity="center"/>
         </LinearLayout>
     </LinearLayout>
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 </LinearLayout>

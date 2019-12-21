@@ -1,6 +1,6 @@
 package com.vupadhi.heyhelp.app.factories;
 
-import android.support.annotation.IntDef;
+import androidx.annotation.IntDef;
 
 import com.vupadhi.heyhelp.ui.activity.Child_care;
 import com.vupadhi.heyhelp.ui.activity.Cook_screen;

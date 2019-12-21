@@ -1,7 +1,7 @@
 package com.vupadhi.heyhelp.mvp.contract.fragment;
 
 import android.content.Context;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 
 import com.vupadhi.heyhelp.mvp.base.IBaseContract;
 import com.vupadhi.heyhelp.mvp.base.IBaseDataManager;

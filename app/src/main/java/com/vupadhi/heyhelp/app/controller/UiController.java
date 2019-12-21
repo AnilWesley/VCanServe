@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.vupadhi.heyhelp.R;
 import com.vupadhi.heyhelp.app.factories.ViewFactory;
